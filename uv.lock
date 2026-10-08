@@ -419,6 +419,18 @@ wheels = [
 ]
 
 [[package]]
+name = "url-normalize"
+version = "3.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "idna" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/26/b60cce0211e94bb130e88dbcba87583f61c6ddf386fa6adc10a167461f6a/url_normalize-3.0.1.tar.gz", hash = "sha256:1655cd214159d9d47dc37aa6ce993c2149da44fa35cac6bafd90036a4eda3ac3", size = 28198, upload-time = "2026-09-22T22:20:54.513Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/bf/98209a164859c81d9eec311ee2b35cd1e5b33c7be8d3665c08850557abe1/url_normalize-3.0.1-py3-none-any.whl", hash = "sha256:97ea68fc543b1fc9f270f34c90cf164453e7d490da2ec653dcd8ebd4e3ac1faf", size = 18296, upload-time = "2026-09-22T22:20:53.342Z" },
+]
+
+[[package]]
 name = "urllib3"
 version = "2.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -435,6 +447,7 @@ dependencies = [
     { name = "aiohttp" },
     { name = "beautifulsoup4" },
     { name = "requests" },
+    { name = "url-normalize" },
 ]
 
 [package.metadata]
@@ -442,6 +455,7 @@ requires-dist = [
     { name = "aiohttp", specifier = "==3.12.12" },
     { name = "beautifulsoup4", specifier = "==4.13.4" },
     { name = "requests", specifier = "==2.32.4" },
+    { name = "url-normalize", specifier = ">=3.0.1" },
 ]
 
 [[package]]
